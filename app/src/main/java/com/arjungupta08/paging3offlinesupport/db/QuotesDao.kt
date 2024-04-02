@@ -17,6 +17,6 @@ interface QuotesDao {
     suspend fun addQuotes(quotes : List<Result>)
 
     @Query("DELETE FROM Quote")
-    suspend fun deleteQuotes(result: Result)
+    suspend fun deleteQuotes()
 
 }
